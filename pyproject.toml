@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adk-qstamp"
+version = "0.1.0"
+description = "Post quantum on chain provenance for Google ADK tool calls"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0 OR MIT"
+authors = [{ name = "Quantova Inc", email = "Quantovaorg@gmail.com" }]
+keywords = ["adk", "agents", "provenance", "post-quantum", "qstamp", "attestation", "audit"]
+
+[project.optional-dependencies]
+adk = ["google-adk>=1.0.0"]
+
+[project.urls]
+Homepage = "https://qstamp.org"
+Source = "https://github.com/quantova-inc/adk-qstamp"
+
+[tool.setuptools.packages.find]
+where = ["src"]
